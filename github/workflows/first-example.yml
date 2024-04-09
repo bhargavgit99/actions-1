@@ -4,6 +4,9 @@ on: push
 
 jobs:
  first_job:
+  - name: checkout Repo
+    uses: actions/checkout@v4
+
   runs-on: ubuntu-latest
   steps:
   - name: Welcome message
